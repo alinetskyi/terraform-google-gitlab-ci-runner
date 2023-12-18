@@ -374,6 +374,7 @@ variable "gitlab_runner_registration_config" {
     maximum_timeout    = ""
     access_level       = "not_protected"
   }
+  type = map(string)
   # validation {
   #   condition     = var.gitlab_runner_registration_config["registration_token"] != ""
   #   error_message = "gitlab_runner_registration_config[\"registration_token\"] must be set"
