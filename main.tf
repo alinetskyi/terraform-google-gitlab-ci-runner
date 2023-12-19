@@ -66,7 +66,7 @@ resource "google_monitoring_metric_descriptor" "jobs" {
 }
 
 resource "google_compute_instance_template" "this" {
-  project = var.project
+  project     = var.project
   name_prefix = "${var.prefix}-gitlab-runner-"
   description = "This template is used to create Gitlab Runner instances."
 

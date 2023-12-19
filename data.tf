@@ -13,6 +13,6 @@ resource "random_id" "this" {
 }
 
 data "google_compute_network" "this" {
-  name = var.network
+  name    = var.network
   project = var.project
 }
